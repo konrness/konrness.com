@@ -194,3 +194,16 @@ pre {
 .txt-center {
   text-align: center;
 }
+
+article ul {
+  @extend %default-ul;
+}
+
+article ol {
+  @extend %default-ol;
+}
+
+article img {
+  float: right;
+  margin: $small-spacing 0 $small-spacing $small-spacing;
+}

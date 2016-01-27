@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+redirect_from:
+  - /contact/
 ---
 
 ![Konr Ness](/images/konrness.jpg)
@@ -16,6 +18,7 @@ I am a husband and father.
 ## My web presences:
 
 * [The Nerdery](http://nerdery.com/people/Kn)
+* [Email](mailto:konrness@gmail.com)
 * [LinkedIn](http://www.linkedin.com/in/konrness)
 * [Facebook](http://facebook.com/konr.ness)
 * [Twitter](http://twitter.com/konrness)

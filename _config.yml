@@ -2,6 +2,9 @@ permalink   : /:categories/:title/
 markdown    : kramdown
 highlighter : pygments
 
+gems:
+  - jekyll-redirect-from
+
 paginate: 6
 comments: true
 paginate_path: "/page/:num"
