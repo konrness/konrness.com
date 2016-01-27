@@ -1,0 +1,42 @@
+permalink   : /:categories/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 6
+comments: true
+paginate_path: "/page/:num"
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
+
+cover: /assets/images/default-cover.png
+
+# site title, description, meta_description, meta_keywords
+# Details for the RSS feed generator
+name: Konr Ness
+title: Konr Ness
+description: "PHP, Javascript, MySQL Developer in Minneapolis, MN"
+keywords: "PHP, MySQL, Javascript, Symfony, Zend Framework"
+url: http://konrness.com
+baseurl: ""
+domain_name: konrness.com
+google_analytics: UA-10324851-1
+repo: http://github.com/konrness/konrness.com
+disqus_shortname: "fernandomoreira"
+
+author:
+  name      : Konr Ness
+  image     : /assets/images/konrness.jpg
+  email     : konrness@gmail.com
+  url       : http://konrness.com
+  facebook  : http://facebook.com/konr.ess
+  twitter   : http://twitter.com/konrness
+  instagram : http://instagram.com/nandomoreira.me
+  github    : http://github.com/konrness
+  linkedin  : http://linkedin.com/in/konrness
+  bio       : "I am a PHP, MySQL, Javascript developer in Minneapolis, MN."
+
+exclude: ["vendor", "gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
