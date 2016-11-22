@@ -1,6 +1,8 @@
 # konrness.com
 
-Konr Ness' personal blog using Jekyll
+Konr Ness' personal blog using Jekyll.
+
+Visit the site at [http://konrness.com](http://konrness.com)
 
 ---
 
@@ -9,7 +11,7 @@ Konr Ness' personal blog using Jekyll
 1. Install Ruby gems: `bundle install --path vendor/bundle`
 2. Start Jekyll server: `bundle exec jekyll serve`
 
-Access, [localhost:4000/mug](http://localhost:4000/mug)
+Access, [localhost:4000/](http://localhost:4000/)
 
 ### To build and deploy
 
