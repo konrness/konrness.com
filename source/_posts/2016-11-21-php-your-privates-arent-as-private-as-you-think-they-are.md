@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PHP: Your privates aren't as private as you think they are"
-description: "Public, protected and protected are class-level visibility, not object-level. What does this mean for you object-oriented PHP?"
+description: "Public, protected and protected are class-level visibility, not object-level. What does this mean for your object-oriented PHP?"
 date: 2016-11-21 13:29:18
 comments: true
 keywords: "php, oop, public, protected, private, object visibility, class visibility, programming"
