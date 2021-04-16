@@ -10,7 +10,7 @@
     <nav class="js-menu sliding-panel-content">
       <ul>
         <li><a href="{{ "/" | prepend: site.baseurl }}">home</a></li>
-        <li><a href="{{ "/about" | prepend: site.baseurl }}">about</a></li>
+        <li><a href="{{ "/about/" | prepend: site.baseurl }}">about</a></li>
         <li><a href="{{ site.repo }}" target="_blank">Download</a></li>
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-feed"></i> feed</a></li>
       </ul>
@@ -28,7 +28,7 @@
       <h1 class="post-title">{{ page.title }}</h1>
     {% else %}
       <h1>Hi, I'm {{ site.name }}</h1>
-      <h2>I'm a web developer in Minneapolis, MN</h2>
+      <h2>I'm a DevOps engineer in Minneapolis, MN</h2>
       {% include search.html %}
     {% endif %}
 
