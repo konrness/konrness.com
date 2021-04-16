@@ -8,18 +8,16 @@ redirect_from:
 
 ![Konr Ness](/images/konrness.jpg)
 
-I am a PHP, MySQL, Javascript developer in Minneapolis, MN.
+I am a DevOps and CI/CD engineer in Minneapolis, MN.
 
-I work at [The Nerdery](http://nerdery.com/people/Kn). There I am a Principal Software Engineer where I work on various web projects. 
-Most of our business is done with local and national advertising agencies, but we also do direct work for corporate and Fortune 500 companies.
+I work at [Harness](https://harness.io). There I am a Solutions Engineer where I get to help customers improve their software release processes.
 
-I am a husband and father.
+I am a husband and father. I enjoy making things like delicious food, woodworking, electronics and haunted houses.
 
 ## My web presences:
 
-* [The Nerdery](http://nerdery.com/people/Kn)
 * [Email](mailto:konrness@gmail.com)
-* [LinkedIn](http://www.linkedin.com/in/konrness)
-* [Facebook](http://facebook.com/konr.ness)
-* [Twitter](http://twitter.com/konrness)
+* [LinkedIn](https://www.linkedin.com/in/konrness)
+* [Twitter](https://twitter.com/konrness)
+* [GitHub](https://github.com/konrness)
 * [Chris Brooks and the Silver City Boys](http://chrisbrooksband.com/) – My country band
