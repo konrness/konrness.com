@@ -1,0 +1,30 @@
+kind: pipeline
+type: docker
+name: konrness-com-build
+
+environment:
+  JEKYLL_VERSION: 2.5.3
+  DOCKER_USERNAME:
+    from_secret: docker_username
+  DOCKER_PASSWORD:
+    from_secret: docker_password
+
+workspace:
+  path: /srv/jekyll
+
+steps:
+- name: jekyll-build
+  image: jekyll/jekyll:$JEKYLL_VERSION
+  commands:
+  - jekyll build
+
+- name: docker-build
+  when:
+    branch: master
+    event: push
+  username: ${DOCKER_USERNAME}
+  password: "${DOCKER_PASSWORD}"
+  image: plugins/docker
+  repo: konrness/konrness.com
+  tag:
+    - latest
