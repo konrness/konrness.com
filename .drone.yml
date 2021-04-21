@@ -23,3 +23,7 @@ steps:
     password: 
       from_secret: docker_password
     repo: konrness/konrness.com
+    auto_tag: true
+    tags:
+      - latest
+      - '1.0'
