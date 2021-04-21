@@ -13,15 +13,13 @@ steps:
   - jekyll build
 
 - name: docker-build
-  environment:
-    DOCKER_USERNAME:
-      from_secret: docker_username
-    DOCKER_PASSWORD:
-      from_secret: docker_password
   when:
     branch: master
     event: push
-  username: ${DOCKER_USERNAME}
-  password: "${DOCKER_PASSWORD}"
-  image: plugins/docker
-  repo: konrness/konrness.com
+  settings:
+    username: 
+      from_secret: docker_username
+    password: 
+      from_secret: docker_password
+    image: plugins/docker
+    repo: konrness/konrness.com
