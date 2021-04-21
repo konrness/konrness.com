@@ -6,14 +6,24 @@ workspace:
   path: /srv/jekyll
 
 steps:
-- name: hello-world
-  image: alpine
-  commands:
-  - pwd
-  - ls -ltra
-
 - name: jekyll-build
   image: jekyll/jekyll:2.5.3
   commands:
   - chmod -R 777 /srv/jekyll
   - jekyll build
+
+- name: docker-build
+  environment:
+    DOCKER_USERNAME:
+      from_secret: docker_username
+    DOCKER_PASSWORD:
+      from_secret: docker_password
+  when:
+    branch: master
+    event: push
+  username: ${DOCKER_USERNAME}
+  password: "${DOCKER_PASSWORD}"
+  image: plugins/docker
+  repo: konrness/konrness.com
+  tag:
+    - latest
