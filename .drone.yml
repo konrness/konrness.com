@@ -8,3 +8,8 @@ steps:
   commands:
   - echo hello
   - echo world
+
+- name: jekyll-build
+  image: jekyll/jekyll:2.5.3
+  commands:
+  - jekyll build
