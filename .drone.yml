@@ -9,12 +9,11 @@ steps:
 - name: hello-world
   image: alpine
   commands:
-  - echo hello
-  - echo world
-  - mkdir test
+  - pwd
   - ls -ltra
 
 - name: jekyll-build
   image: jekyll/jekyll:2.5.3
   commands:
+  - chmod -R 777 /srv/jekyll
   - jekyll build
