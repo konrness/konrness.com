@@ -11,6 +11,7 @@ steps:
   commands:
   - chmod -R 777 /srv/jekyll
   - jekyll build
+  - date +%y.%-m.%-d.$DRONE_BUILD_NUMBER > .tags
 
 - name: docker-build
   image: plugins/docker  
@@ -23,7 +24,3 @@ steps:
     password: 
       from_secret: docker_password
     repo: konrness/konrness.com
-    auto_tag: true
-    tags:
-      - latest
-      - '1.0'
