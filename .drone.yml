@@ -14,6 +14,6 @@ steps:
 
 - name: jekyll-build
   image: jekyll/jekyll:2.5.3
-  user: jekyll
+  user: root
   commands:
   - jekyll build
