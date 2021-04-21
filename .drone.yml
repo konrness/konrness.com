@@ -11,9 +11,10 @@ steps:
   commands:
   - echo hello
   - echo world
+  - mkdir test
+  - ls -ltra
 
 - name: jekyll-build
   image: jekyll/jekyll:2.5.3
-  user: root
   commands:
   - jekyll build
