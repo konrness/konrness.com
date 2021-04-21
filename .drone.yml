@@ -11,7 +11,7 @@ steps:
   commands:
   - chmod -R 777 /srv/jekyll
   - jekyll build
-  - date +%y.%-m.%-d.${DRONE_BUILD_NUMBER} > .tags
+  - date +%y.%m.%d.${DRONE_BUILD_NUMBER} > .tags
   - cat .tags
 
 - name: docker-build
