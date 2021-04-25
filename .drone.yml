@@ -25,3 +25,15 @@ steps:
     password: 
       from_secret: docker_password
     repo: konrness/konrness.com
+
+- name: docker-build
+  image: plugins/docker  
+  when:
+    branch: master
+    event: push
+  settings:
+    username: 
+      from_secret: gcr_username
+    password: 
+      from_secret: gcr_key
+    repo: gcr.io/personal-sites-310123/konrness.com
