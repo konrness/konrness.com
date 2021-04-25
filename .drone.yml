@@ -26,7 +26,7 @@ steps:
       from_secret: docker_password
     repo: konrness/konrness.com
 
-- name: docker-build
+- name: gcr-build
   image: plugins/docker  
   when:
     branch: master
