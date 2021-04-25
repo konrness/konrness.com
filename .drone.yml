@@ -24,3 +24,13 @@ steps:
     password: 
       from_secret: docker_password
     repo: konrness/konrness.com
+
+- name: gcr-publish
+  image: plugins/gcr  
+  when:
+    branch: master
+  settings:
+    json_key: 
+      from_secret: gcr_key
+    repo: personal-sites-310123/konrness.com
+    mirror: https://mirror.gcr.io
