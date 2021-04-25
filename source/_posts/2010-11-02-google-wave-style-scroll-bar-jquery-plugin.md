@@ -26,7 +26,7 @@ In it’s tiny form-factor, the Google Wave scroll bar is able to:
 After being announced that [Google Wave will be retired](http://googleblog.blogspot.com/2010/08/update-on-google-wave.html), 
 I wanted to immortalize this new way of scrolling in a jQuery plugin that does the same thing.
 
-[**View Demo**](http://code.konrness.com/google-wave-scrollbar/)
+[**View Demo**](https://konrness.github.io/google-wave-scrollbar/)
 
 It currently does not work in IE because it uses CSS image data instead of referencing an actual image URL, but upon 
 changing the image CSS, it will work in IE.
