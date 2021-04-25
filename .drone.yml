@@ -18,7 +18,6 @@ steps:
   image: plugins/docker  
   when:
     branch: master
-    event: push
   settings:
     username: 
       from_secret: docker_username
@@ -30,7 +29,6 @@ steps:
   image: plugins/gcr  
   when:
     branch: master
-    event: push
   settings:
     json_key: 
       from_secret: gcr_key
