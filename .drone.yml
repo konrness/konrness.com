@@ -14,7 +14,7 @@ steps:
   - date +%y.%m.%d-${DRONE_BUILD_NUMBER} > .tags
   - cat .tags
 
-- name: docker-build
+- name: docker-publish
   image: plugins/docker  
   when:
     branch: master
@@ -26,14 +26,12 @@ steps:
       from_secret: docker_password
     repo: konrness/konrness.com
 
-- name: gcr-build
-  image: plugins/docker  
+- name: gcr-publish
+  image: plugins/gcr  
   when:
     branch: master
     event: push
   settings:
-    username: 
-      from_secret: gcr_username
-    password: 
+    json_key: 
       from_secret: gcr_key
-    repo: gcr.io/personal-sites-310123/konrness.com
+    repo: personal-sites-310123/konrness.com
