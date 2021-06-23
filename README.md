@@ -31,3 +31,5 @@ Access, [localhost:8080/](http://localhost:8080/)
 It is under [the MIT license](/LICENSE).
 
 Thanks [Mug](http://nandomoreira.me/mug/) for the theme.
+
+Build test.
